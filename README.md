@@ -1,4 +1,4 @@
-# PrebidNetworkMonitoring
+# Prebid Network Monitoring
 
 - No bucketing logic, logging absolute values to StatHat
 - Removed Google from monitoring as there are many calls to Google on the page
@@ -10,5 +10,5 @@
 - In this code the value for the Country parameter is set with `navigator.language` as this code can't have an input and Country detection in JS comes with an additional cost. The value for US country will be something like `en-US` for an englishe speaking person. We may want to change this after iinitial run.
 - As page can run multiple auctions, the code takes care of not gathering stats for the network calls made in previous auction
 
-# GoodToHave
+# Good To Have
 - we can add bid/no-bid signal in the key name as when biddder has bid-response the response size will be larger than the no-bid response.
